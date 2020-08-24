@@ -12,12 +12,12 @@
 #
 # Crear un programa que imprima por pantalla todos los números del 0 al 100 que sean divisibles por 3.
 
-# def exercise3():
-#     for number in range(0, 101):
-#         if number % 3 == 0:
-#             print(number)
-#
-# exercise3()
+def exercise3():
+    for number in range(0, 101):
+        if number % 3 == 0:
+            print(number)
+
+exercise3()
 
 # Ejercicio 4
 # Crear un programa que pida al usuario que ingrese dos números y luego el programa imprima por pantalla: en un renglón la suma de ellos, en otro la resta y en otro el producto.
@@ -81,7 +81,7 @@ def excercise11(userInput):
     # ultimaPalabra = wordList[-1]
     # longitud = len(ultimaPalabra)
     # return longitud
-    
+
     return len(wordList[-1])
 
 result = excercise11("Bienvenidos a paradigmas de programación")
