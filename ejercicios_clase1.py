@@ -91,3 +91,24 @@ print(result)
 # En McDonald’s se pueden comprar patitas de pollo en 6, 9 o 20 unidades. Crear un programa que, a partir de un número, decida si es posible comprar esa cantidad de patitas.
 #
 #
+
+
+class Persona():
+    nombre = "nombre"
+
+    def Comer():
+        print("estoy comiendo")
+
+class Perro():
+    raza = ""
+
+    def Ladrar():
+        print("ladro ladro")
+
+
+persona1 = Persona("Eliana")
+
+persona1.Comer()
+
+
+perro1 = Perro()
