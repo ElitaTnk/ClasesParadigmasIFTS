@@ -13,10 +13,10 @@
 # Crear un programa que imprima por pantalla todos los números del 0 al 100 que sean divisibles por 3.
 
 def exercise3():
-    for number in range(0, 101):
-        if number % 3 == 0:
+    for number in range(0, 101): # n
+        if number % 3 == 0: 1
             print(number)
-
+# O(n)
 exercise3()
 
 # Ejercicio 4
@@ -27,14 +27,15 @@ exercise3()
 # Crear un programa que pida al usuario 10 números enteros, los almacene en una lista, ordene los números dentro de la lista y luego imprima por pantalla la lista completa y ordenada.
 
 def excercise5():
-    userValueList = []
-    for number in range(10):
-        userValue = int(input("Ingrese un numero entero"))
-        userValueList.append(userValue)
+    userValueList = [] # 1
+    for number in range(10): # N
+        userValue = int(input("Ingrese un numero entero")) # 1
+        userValueList.append(userValue) # 1
 
+    # print(userValueList)
+    userValueList.sort() #n log n
     print(userValueList)
-    userValueList.sort()
-    print(userValueList)
+# O(n log(n))
 #excercise5()
 
 # Ejercicio 6
