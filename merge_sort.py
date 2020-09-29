@@ -2,19 +2,24 @@ def merge_sort(lista):
     """Ordena lista mediante el método merge sort.
     Pre: lista debe contener elementos comparables.
     Devuelve: una nueva lista ordenada."""
-    if len(lista) < 2:
-        #print("devuelve lista porque len < 2")
+    if len(lista) <= 2:
+        print("devuelve lista porque len < 2")
         return lista
-    medio = len(lista) // 2
+    medio = len(lista) // 3
+    print("medio" ,medio)
     #print("hola soy merge sort")
     izq = merge_sort(lista[:medio])
     #print("izq")
-    der = merge_sort(lista[medio:])
+    medio2 = merge_sort(lista[medio: (medio * 2)])
+
+    der2 = merge_sort(lista[(medio * 2):])
     #print("derecho")
 
-    return merge(izq, der)
+    print(izq, medio2 , der2)
 
-def merge(lista1, lista2):
+    #return merge(izq, der, der2)
+
+def merge(lista1, lista2, lista3):
     """Intercala los elementos de lista1 y lista2 de forma ordenada.
     Pre: lista1 y lista2 deben estar ordenadas.
     Devuelve: una lista con los elementos de lista1 y lista2."""
@@ -47,4 +52,4 @@ def merge(lista1, lista2):
     return resultado
 
 
-print(merge_sort([6,7,-1,0,5,2,3,8,9]))
+print(merge_sort([6,7,-1,0,5,2,3,8]))
