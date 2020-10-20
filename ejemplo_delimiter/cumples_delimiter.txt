@@ -1,0 +1,3 @@
+nombre;area;cumpleaños
+Juan Carlos;Contabilidad;Noviembre, 05 de
+Erica Martinez;Sistemas;Marzo, 27 de

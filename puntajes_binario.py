@@ -20,5 +20,5 @@ def recuperar_puntajes(nombre_archivo):
     [(nombre1,puntaje1,tiempo1),(nombre2,puntaje2,tiempo2)].
     """
 
-    with open(nombre_archivo, "rb") as f:
+    with open(nombre_archivo, "r") as f:
         return pickle.load(f)

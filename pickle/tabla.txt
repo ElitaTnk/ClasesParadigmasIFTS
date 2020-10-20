@@ -1,0 +1,4 @@
+Juan Pablo,105,4:15
+Eliana,325,8:12
+Gustavo,35,14:15
+Natalia,25,28:12

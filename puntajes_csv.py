@@ -8,7 +8,7 @@ def guardar_puntajes(nombre_archivo, puntajes):
     separados por comas.
     """
 
-    with open(nombre_archivo, "w") as f:
+    with open(nombre_archivo, "w", newline='') as f:
         archivo_csv = csv.writer(f)
         archivo_csv.writerows(puntajes)
         #print(archivo_csv)
@@ -23,7 +23,7 @@ def recuperar_puntajes(nombre_archivo):
     """
 
     puntajes = []
-    with open(nombre_archivo, "r") as f:
+    with open(nombre_archivo, "r", newline='') as f:
         archivo_csv = csv.reader(f)
         for nombre, puntaje, tiempo in archivo_csv:
             puntajes.append((nombre, int(puntaje), tiempo))
