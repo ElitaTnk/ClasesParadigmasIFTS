@@ -123,6 +123,8 @@ def tablaN():
 
 # tablaN()
 #7 b
+import os.path
+
 def eje7_guardar(archivo, campos):
     guardar = "si"
     lista_vendedores = []
@@ -135,9 +137,13 @@ def eje7_guardar(archivo, campos):
         guardar = input("Desea seguir agregando vendedores? Si/No")
 
     try:
-        with open(archivo, 'w', newline='') as file:
+        archivo_existe = os.path.isfile(archivo)
+        with open(archivo, 'a', newline='') as file:
             file_guarda = csv.DictWriter(file, fieldnames=campos)
-            file_guarda.writeheader()
+
+            if not archivo_existe:
+                file_guarda.writeheader()
+
             file_guarda.writerows(lista_vendedores)
             print("se guardo correctamente")
             return
@@ -175,7 +181,7 @@ def ejercicio7():
         else:
             print("Por favor elija una opcion valida")
 
-# ejercicio7()
+ejercicio7()
 
 
 #7 b listas
@@ -229,4 +235,4 @@ def ejercicio7_listas():
         else:
             print("Por favor elija una opcion valida")
 
-ejercicio7_listas()
+# ejercicio7_listas()
